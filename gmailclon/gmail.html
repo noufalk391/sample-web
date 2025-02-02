@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header {
+            background-color: #d93025;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .sidebar {
+            background-color: #f1f3f4;
+            width: 200px;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            height: calc(100vh - 50px);
+            position: fixed;
+            top: 50px;
+            left: 0;
+            overflow-y: auto;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            flex: 1;
+            height: calc(100vh - 50px);
+            overflow-y: auto;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Gmail Clone</div>
+        <div class="user-info">User Info</div>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li>Inbox</li>
+            <li>Starred</li>
+            <li>Sent</li>
+            <li>Drafts</li>
+            <li>Spam</li>
+            <li>Trash</li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Welcome to Gmail Clone</h1>
+        <p>This is the main content area where your emails will be displayed.</p>
+    </div>
+</body>
+</html>
